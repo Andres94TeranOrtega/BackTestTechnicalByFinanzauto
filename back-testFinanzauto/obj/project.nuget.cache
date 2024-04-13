@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Li2xBA0BhfD4b4WoDnn1p3736o/1180PWw88998/CKLic7j4BdGK7ws9fJtAeWL1cggEE3PG1QCppohEUv5G5w==",
+  "dgSpecHash": "yxjLGgDmnVwZ/mLLYmDGIzKH+Hzewkdoi5qPZzATQ98xeD9Rwg1vO9VDwD0+TuTAhizZWNyfaxe/9ccKOuVb7Q==",
   "success": true,
-  "projectFilePath": "C:\\Development\\Finanzauto\\back-testFinanzauto\\back-testFinanzauto\\back-testFinanzauto.csproj",
+  "projectFilePath": "C:\\Development\\Finanzauto\\BackTestTechnicalByFinanzauto\\back-testFinanzauto\\back-testFinanzauto.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Usuario\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",

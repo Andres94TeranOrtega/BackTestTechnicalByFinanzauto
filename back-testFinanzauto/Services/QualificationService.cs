@@ -18,23 +18,23 @@ namespace back_testFinanzauto.Services
             _context.SaveChanges();
         }
 
-        public List<QualificationModel> GetAllStudentById()
+        public List<QualificationModel> GetAllQualificationById()
         {
             return _context.Qualification.ToList();
         }
 
-        public QualificationModel GetStudentById(int id)
+        public QualificationModel GetQualificationById(int id)
         {
             return _context.Qualification.FirstOrDefault(s => s.IdStudent == id);
         }
 
-        public void UpdateStudent(QualificationModel qualification)
+        public void UpdateQualification(QualificationModel qualification)
         {
             _context.Qualification.Update(qualification);
             _context.SaveChanges();
         }
 
-        public void DeleteStudent(int id)
+        public void DeleteQualification(int id)
         {
             var qualification = _context.Qualification.Find(id);
             if (qualification != null)

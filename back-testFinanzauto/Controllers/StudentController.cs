@@ -67,7 +67,7 @@ namespace back_testFinanzauto.Controllers
         }
 
         [HttpPut("{id}")]
-        public IActionResult UpdateStudent(int id, StudentsModel student)
+        public ActionResult<StudentsModel> UpdateStudent(int id, StudentsModel student)
         {
             try
             {
@@ -76,7 +76,7 @@ namespace back_testFinanzauto.Controllers
                     return BadRequest();
                 }
                 _studenServices.UpdateStudent(student);
-                return NoContent();
+                return student;
             }
             catch (Exception ex)
             {
@@ -86,12 +86,12 @@ namespace back_testFinanzauto.Controllers
         }
 
         [HttpDelete("{id}")]
-        public IActionResult DeletedStudent(int id)
+        public ActionResult<TeachersModel> DeletedStudent(int id)
         {
             try
             {
                 _studenServices.DeleteStudent(id);
-                return NoContent();
+                return Ok("El estudiante ha sido eliminado");
             }
             catch (Exception ex)
             {

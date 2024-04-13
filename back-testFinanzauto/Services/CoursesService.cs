@@ -18,23 +18,23 @@ namespace back_testFinanzauto.Services
             _context.SaveChanges();
         }
 
-        public List<CoursesModel> GetAllStudentById()
+        public List<CoursesModel> GetAllCoursesById()
         {
             return _context.Courses.ToList();
         }
 
-        public CoursesModel GetStudentById(int id)
+        public CoursesModel GetCoursesById(int id)
         {
             return _context.Courses.FirstOrDefault(s => s.IdCourse == id);
         }
 
-        public void UpdateIdCourse(CoursesModel courses)
+        public void UpdateCourse(CoursesModel courses)
         {
             _context.Courses.Update(courses);
             _context.SaveChanges();
         }
 
-        public void DeleteIdCourse(int id)
+        public void DeleteCourse(int id)
         {
             var courses = _context.Courses.FirstOrDefault(s => s.IdCourse == id);
             if (courses != null)

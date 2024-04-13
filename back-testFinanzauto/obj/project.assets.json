@@ -2439,11 +2439,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Development\\Finanzauto\\back-testFinanzauto\\back-testFinanzauto\\back-testFinanzauto.csproj",
+      "projectUniqueName": "C:\\Development\\Finanzauto\\BackTestTechnicalByFinanzauto\\back-testFinanzauto\\back-testFinanzauto.csproj",
       "projectName": "back-testFinanzauto",
-      "projectPath": "C:\\Development\\Finanzauto\\back-testFinanzauto\\back-testFinanzauto\\back-testFinanzauto.csproj",
+      "projectPath": "C:\\Development\\Finanzauto\\BackTestTechnicalByFinanzauto\\back-testFinanzauto\\back-testFinanzauto.csproj",
       "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-      "outputPath": "C:\\Development\\Finanzauto\\back-testFinanzauto\\back-testFinanzauto\\obj\\",
+      "outputPath": "C:\\Development\\Finanzauto\\BackTestTechnicalByFinanzauto\\back-testFinanzauto\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",

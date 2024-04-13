@@ -1,6 +1,7 @@
 using back_testFinanzauto.Contexts;
 using back_testFinanzauto.Models;
 using back_testFinanzauto.Services;
+using back_testFinanzauto.Tools;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 
@@ -33,6 +34,7 @@ if (app.Environment.IsDevelopment())
 }
 app.UseHttpsRedirection();
 
+app.UseMiddleware<ApiKeyAuth>();
 app.UseAuthorization();
 
 app.MapControllers();

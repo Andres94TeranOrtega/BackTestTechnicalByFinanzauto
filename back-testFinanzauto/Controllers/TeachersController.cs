@@ -9,10 +9,10 @@ namespace back_testFinanzauto.Controllers
     public class TeachersController : ControllerBase
     {
         private readonly TeachersService _teacherServices;
-        private readonly ILogger<StudentController> _logger;
-        public TeachersController(TeachersService studentService, ILogger<StudentController> logger)
+        private readonly ILogger<TeachersController> _logger;
+        public TeachersController(TeachersService teachertService, ILogger<TeachersController> logger)
         {
-            _teacherServices = studentService;
+            _teacherServices = teachertService;
             _logger = logger;
         }
 
@@ -65,7 +65,7 @@ namespace back_testFinanzauto.Controllers
         }
 
         [HttpPut("{id}")]
-        public IActionResult UpdateTeachers(int id, TeachersModel teachers)
+        public ActionResult<TeachersModel> UpdateTeachers(int id, TeachersModel teachers)
         {
             try
             {
@@ -74,7 +74,7 @@ namespace back_testFinanzauto.Controllers
                     return BadRequest();
                 }
                 _teacherServices.UpdateTeachers(teachers);
-                return NoContent();
+                return teachers;
             }
             catch (Exception ex)
             {
@@ -84,12 +84,12 @@ namespace back_testFinanzauto.Controllers
         }
 
         [HttpDelete("{id}")]
-        public IActionResult DeletedTeachers(int id)
+        public ActionResult<TeachersModel> DeletedTeachers(int id)
         {
             try
             {
                 _teacherServices.DeleteTeachers(id);
-                return NoContent();
+                return Ok("El profesor ha sido eliminado");
             }
             catch (Exception ex)
             {
